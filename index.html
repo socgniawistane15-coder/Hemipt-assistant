@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#087c45">
+  <title>HEMIPT Assistant | Student Guide</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/jpg" href="b.jpg">
+</head>
+
+<body>
+  <header class="navbar">
+    <a href="#" class="brand">
+        <img src="a.jpg" alt="Hemipt logo" class="brand-logo">
+      <span>
+        <strong>HEMIPT</strong>
+        <small>University Institute</small>
+      </span>
+    </a>
+
+    <select id="language" aria-label="Choose language">
+      <option value="en">English</option>
+      <option value="fr">Français</option>
+    </select>
+  </header>
+
+  <main class="container">
+    <section class="welcome">
+      <span class="eyebrow" id="eyebrow">YOUR STUDENT GUIDE</span>
+      <h1 id="welcome-title">
+        Welcome to HEMIPT Assistant
+      </h1>
+
+      <p id="welcome-text">
+        Your friendly guide to programs, registration,
+        school fees and campus information.
+      </p>
+
+      <div class="topics" id="topics"></div>
+
+      <div class="info-note" id="info-note">
+        For official confirmation of fees and admission
+        requirements, contact the school administration.
+      </div>
+    </section>
+
+    <section class="chat-card">
+      <div class="chat-header">
+        <div class="bot-avatar">
+            <img src="a.jpg" alt="chatbot-logo" class="bot-logo">
+        </div>
+
+        <div>
+          <h2 id="chat-title">HEMIPT Assistant</h2>
+          <p>
+            <span class="online-dot"></span>
+            <span id="status-text">Ready to help</span>
+          </p>
+        </div>
+
+        <button id="clear-chat" class="clear-button" type="button"
+          title="Clear conversation" aria-label="Clear conversation">
+          ↻
+        </button>
+      </div>
+
+      <div id="chat-messages" class="chat-messages"
+        role="log" aria-live="polite">
+      </div>
+
+      <div class="suggestion-area">
+        <p id="suggestion-label">Try asking:</p>
+        <div id="quick-questions" class="quick-questions"></div>
+      </div>
+
+      <form id="chat-form" class="chat-input-area">
+        <input
+          type="text"
+          id="user-input"
+          placeholder="Type your question..."
+          autocomplete="off"
+          aria-label="Type your question"
+          required
+        >
+        <button id="send-button" type="submit">
+          Send ➤
+        </button>
+      </form>
+
+      <p class="chat-footer" id="chat-footer">
+        HEMIPT Student Information Assistant
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© HEMIPT Assistant | Interactive Departments & Programs Guide</p>
+    <p>Software Engineering HND Student project — verify official information with the school.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
